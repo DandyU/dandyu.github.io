@@ -1,8 +1,8 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+title: Memo
+description: 메모 습관
+author: DandyU
+github: https://github.com/DandyU
+about: 회사원
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 
@@ -38,7 +38,7 @@ urls:
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://dandyu.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
