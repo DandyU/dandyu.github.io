@@ -1,56 +1,37 @@
-title: Memo
-description: 메모 습관
-author: DandyU
-github: https://github.com/DandyU
-about: 회사원
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+title: 메모 습관
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "https://dandyu.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-enableTags: true
-tagarray: []
+# Author Settings
+author: DandyU # add your name
+author-img: profileImg.jpg # add your photo
+about-author: 회사원 # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: DandyU # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/agusmakmun"
+# Tracker
+analytics: # Google Analytics
 
-share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
-
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
-
-url: "https://dandyu.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+# Build Settings
 markdown: kramdown
-gems:
+plugins:
+  - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-gist
+  - jemoji
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
