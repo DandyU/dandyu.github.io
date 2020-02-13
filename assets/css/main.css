@@ -140,7 +140,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace, "Malgun Gothic";
+  font-family: consolas, "Malgun Gothic";
   /* 1 */
   font-size: 0.8em;
   /* 2 */
